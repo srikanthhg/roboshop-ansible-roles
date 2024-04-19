@@ -1,0 +1,7 @@
+- name: "setup {{component}} server"
+  hosts: "{{component}}"
+  vars_files:
+  - variables.yaml
+  become: yes
+  roles:
+  - "{{component}}"
